@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".Home_h">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+
+        android:background="@mipmap/ic_launcher_foreground"
+
+
+        />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="320dp"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="2">
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/hospitalBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+
+            android:onClick="live"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/synchronize" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Live"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pharmacyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            android:onClick="history"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+
+                android:orientation="vertical"
+
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+
+                    android:layout_height="80dp"
+                    android:background="@drawable/history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="History"
+                    android:textColor="#000000"
+
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pathologyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:onClick="help"
+                android:orientation="vertical"
+
+
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+
+                    android:layout_height="80dp"
+                    android:background="@drawable/group" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+
+            android:layout_margin="12dp"
+            android:onClick="exit"
+
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+
+                    android:layout_height="80dp"
+                    android:background="@drawable/logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textColor="#000000"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="411dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:background="#971A1A"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button8"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="home"-->
+<!--            android:text="Home" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button9"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="history"-->
+<!--            android:text="History" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button10"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="help"-->
+<!--            android:text="About Us" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button11"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:onClick="exit"-->
+<!--            android:text="logout" />-->
+
+<!--    </LinearLayout>-->
+
+</RelativeLayout>

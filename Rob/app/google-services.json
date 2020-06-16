@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "974930343121",
+    "firebase_url": "https://robocop-a9921.firebaseio.com",
+    "project_id": "robocop-a9921",
+    "storage_bucket": "robocop-a9921.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974930343121:android:d1d65c248424d5cd2001f0",
+        "android_client_info": {
+          "package_name": "com.lakhu.rob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974930343121-nsg1l1479q3q05pru58faasnsdkuftho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzFjwi8Mfkb0S9vx3_r8lSpV9wmUh_0J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974930343121-nsg1l1479q3q05pru58faasnsdkuftho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
